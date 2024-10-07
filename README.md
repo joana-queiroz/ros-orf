@@ -22,26 +22,3 @@ It is rooted in Rosalind problem [ORF](https://rosalind.info/problems/orf/), exp
 
 It will be my first time using Git and GitHub - if things get messy, that's why. I believe there will be branches:
 - there will be the biopython branch and the non-biopython branch, we'll see which stands as master
-
-## Files
-### Level 1:
-- Python file
-- Input: Rosalind FASTA file with sequence
-### Level 2:
-- Python file
-- R file
-- Input:
-  - Rosalind FASTA file with sequence
-- Output:
-  - dataframe csv file
-  - plot files
-  - FASTA files   
-### Level 3:
-- Python file
-- Bash
-- Input:
-  - FASTA file with multiple sequences
-- Output:
-  - dataframe
-  - plots
-  - FASTA files
