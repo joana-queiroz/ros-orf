@@ -20,5 +20,4 @@ It is rooted in Rosalind problem [ORF](https://rosalind.info/problems/orf/), exp
 | Level 2 | Gather and analyse data, and generate FASTA files | Pandas dataframes. Plotting with ggplot2 and with python. Writing FASTA files. |
 | Level 3 | Scale-up and run through bash | Dynamic functions. Dealing with multiple sequences. Running Python through Bash. |
 
-It will be my first time using Git and GitHub - if things get messy, that's why. I believe there will be branches:
-- there will be the biopython branch and the non-biopython branch, we'll see which stands as master
+It will be my first time using Git and GitHub - if things get messy, that's why. 
