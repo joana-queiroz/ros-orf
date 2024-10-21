@@ -15,9 +15,31 @@ It is rooted in Rosalind problem [ORF](https://rosalind.info/problems/orf/), exp
 
 
 | Level | Task | Main learning goals |
-| ----- | ---- | -------------- |
+| ----- | ---- | ------------------- |
 | Level 1 | Solve Rosalind problem ORF | Python loops, dictionaries, lists... Parsing FASTA files. Dealing with reading frames. Biopython. |
 | Level 2 | Gather and analyse data, and generate FASTA files | Pandas dataframes. Plotting with ggplot2. Writing FASTA files. |
 | Level 3 | Improve usability and performance | Organizing files into scripts or packaged modules. Running Python scripts through Bash. Numpy and other packages. Plotting with python. |
 
 It will be my first time using Git and GitHub - if things get messy, that's why. 
+
+
+## Files
+
+### Level 1
+- `rosorf-lvl1-notebook.ipynb`
+
+### Level 2
+
+- `rosorf-lvl2-notebook.ipynb`
+- `rosorf-lvl2-plot.r`
+
+### Level 3
+- `rosorf-lvl3-notebook.ipynb`
+- `rosorf-lvl3-perfbenchm.ipynb`
+
+### Packages
+- `mypyplots`
+  - `heatmap_grid`
+  - `linear_regression_fit`
+  - `exponential_regression_fit`
+- `rosorf_level_3`
