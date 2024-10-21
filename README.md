@@ -18,6 +18,6 @@ It is rooted in Rosalind problem [ORF](https://rosalind.info/problems/orf/), exp
 | ----- | ---- | -------------- |
 | Level 1 | Solve Rosalind problem ORF | Python loops, dictionaries, lists... Parsing FASTA files. Dealing with reading frames. Biopython. |
 | Level 2 | Gather and analyse data, and generate FASTA files | Pandas dataframes. Plotting with ggplot2. Writing FASTA files. |
-| Level 3 | Improve usability and performance | Organizing files into packaged modules or scripts, running Python scripts through Bash. Plotting with python. |
+| Level 3 | Improve usability and performance | Organizing files into scripts or packaged modules. Running Python scripts through Bash. Numpy and other packages. Plotting with python. |
 
 It will be my first time using Git and GitHub - if things get messy, that's why. 
