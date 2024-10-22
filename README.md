@@ -18,7 +18,7 @@ It is rooted in Rosalind problem [ORF](https://rosalind.info/problems/orf/), exp
 | ----- | ---- | ------------------- |
 | Level 1 | Solve Rosalind problem ORF: return list of putative ORFs of a given DNA sequence | Python loops, dictionaries, lists... Parsing FASTA files. Dealing with reading frames. Biopython. |
 | Level 2 | Gather and analyse data on putative ORFs of a given DNA sequence, and generate FASTA files | Writing functions. Pandas dataframes. Plotting with ggplot2. Writing FASTA files. |
-| Level 3 | Assemble a program to find putative ORFs of DNA sequences with improve usability and performance | Organizing files into scripts or packaged modules. Running Python scripts through Bash. Numpy and other packages. Plotting with python. |
+| Level 3 | Assemble a program to find putative ORFs of DNA sequences with improve usability and performance | Organizing files into scripts or packaged modules. Running Python scripts through Bash. Numpy, polars and other packages. Plotting with python. |
 
 It will be my first time using Git and GitHub - if things get messy, that's why. 
 
