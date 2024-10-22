@@ -2,7 +2,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Function to create the FacetGrid and colorbar
-def heatmap_grid(data, xaxis, yaxis, heatval, subpvar, gridtitle, heatbartitle):
+def heatmap_grid(data, xvar, yvar, heatvar, subpvar, gridtitle, heatbartitle):
     
     # Find min and max Running Time
     vmin = data['Running Time'].min()
@@ -12,9 +12,9 @@ def heatmap_grid(data, xaxis, yaxis, heatval, subpvar, gridtitle, heatbartitle):
     # Function to create heatmap for each subset of data
     def draw_heatmap(data, vmin, vmax, **kwargs):
         # Pivot the data for heatmap
-        heatmap_data = data.pivot_table(values=heatval, 
-                                         index=yaxis, 
-                                         columns=xaxis, 
+        heatmap_data = data.pivot_table(values=heatvar, 
+                                         index=yvar, 
+                                         columns=xvar, 
                                          aggfunc='mean')  # Aggregate if there are multiple values
 
         heatmap_data = heatmap_data[::-1]
@@ -33,8 +33,8 @@ def heatmap_grid(data, xaxis, yaxis, heatval, subpvar, gridtitle, heatbartitle):
         subptitle = data[subpvar].iloc[0]
         plt.title(subptitle, fontweight='bold', fontsize=14, pad=15)
         # Set x and y labels with bold font
-        plt.xlabel(xaxis, fontsize=10, labelpad=10)
-        plt.ylabel(yaxis, fontsize=10, labelpad=10)
+        plt.xlabel(xvar, fontsize=10, labelpad=10)
+        plt.ylabel(yvar, fontsize=10, labelpad=10)
 
     # Create a FacetGrid for heatmaps separated by subpvar
     g = sns.FacetGrid(data, col=subpvar, height=3, aspect=1.0)
