@@ -1,8 +1,9 @@
 # Make functions Bash command-line-friendly by parsing arguments
 # - i.e., specify command-line arguments and define how they should be interpreted into python script
-
 import argparse
-from mod_random_dna import random_dnaseq_generator, seqrecord_fasta_writer, seqrecord_printer
+import sys
+sys.path.append('C:\\Users\\joanaq\\Documents\\learning-bioinformatics\\projects\\ros-orf')
+from random_seq import random_dnaseq_generator, seqrecord_fasta_writer, seqrecord_printer
 
 def main():
     parser = argparse.ArgumentParser(description="Generate random DNA sequences and either print them (default) or save to FASTA file (if file name specified).")
