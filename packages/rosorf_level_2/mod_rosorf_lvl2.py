@@ -6,7 +6,7 @@ import pandas as pd
 
 # PART 1: PREPARE DNA INPUT
 
-def fasta_dna_parser(fasta_file):
+def fasta_parser_lvl2(fasta_file):
     """Parse FASTA file with DNA sequences into dataframe with DNA ID and sequence.
     
     Input: path to FASTA file
@@ -27,7 +27,7 @@ def fasta_dna_parser(fasta_file):
 
 # PART 2: Find putative ORFs on DNA sequences
 
-def orf_finder(dna_dict):
+def orf_finder_lvl2(dna_dict):
     """Find putative ORFs in DNA sequences provided in dataframe,
     and return dataframe with location data for putative ORFs and unique putative ORF ID.
     Note that start and stop codon location is stored as 0-based python index of the first codon nt.
@@ -60,7 +60,7 @@ def orf_finder(dna_dict):
                 if seq[i:i+3] in start_codon:
                     for j in range(i+3, len(seq)-2, 3):
                         if seq[j:j+3] in stop_codon:
-                            orf_id = f'{dna_id.lower()}_orf_{len(orf_dict['Putative ORF ID'])+1}'
+                            orf_id = f"{dna_id.lower()}_orf_{len(orf_dict['Putative ORF ID'])+1}"
                             orf_dict['Source DNA ID'].append(dna_id)
                             orf_dict['Putative ORF ID'].append(orf_id)
                             orf_dict['Strand'].append(dir)
@@ -75,7 +75,7 @@ def orf_finder(dna_dict):
 
 # PART 3: ASSEMBLE DATAFRAME WITH MORE PUTATIVE ORF DATA
 
-def orf_data_collector(dna_dict, orf_locations_df):
+def orf_data_collector_lvl2(dna_dict, orf_locations_df):
     """Gather more data regarding putative ORFs and store it in more comprehensive dataframe.
     This data can be useful for subsequent analysis and plotting.
     Examples of data to collect:
@@ -143,7 +143,7 @@ def orf_data_collector(dna_dict, orf_locations_df):
 
 # PART 4: GENERATE FASTA FILES WITH PUTATIVE ORFS
 
-def orf_dna_fasta_generator(dna_dict, orf_df):
+def orf_dna_fasta_generator_lvl2(dna_dict, orf_df):
     """Write DNA FASTA files for putative ORFs found for each input DNA sequence. One file is created per source DNA.
     Files contains the putative ORF DNA sequences, along with ORF ID and length."""
 
@@ -174,7 +174,7 @@ def orf_dna_fasta_generator(dna_dict, orf_df):
     return orf_fasta
 
 
-def orf_mrna_fasta_generator(dna_dict, orf_df):
+def orf_mrna_fasta_generator_lvl2(dna_dict, orf_df):
     """Write RNA FASTA files for putative ORFs found for each input DNA sequence. One file is created per source DNA.
     File contains the putative ORF mRNA sequences, along with ORF ID and length"""
 
@@ -205,7 +205,7 @@ def orf_mrna_fasta_generator(dna_dict, orf_df):
     return mrna_fasta
 
 
-def orf_peptide_fasta_generator(dna_dict, orf_df):
+def orf_peptide_fasta_generator_lvl2(dna_dict, orf_df):
     """Write peptide FASTA files for putative ORFs found for each input DNA sequence. One file is created per source DNA.
     File contains the putative ORF peptide sequences, along with ORF ID and size"""
     # Prepare input DNA sequences and start empty dictionary for putative ORFs

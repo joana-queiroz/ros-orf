@@ -1,1 +1,1 @@
-from .mod_rosorf_level_2 import fasta_dna_parser, orf_finder, orf_data_collector, orf_dna_fasta_generator, orf_mrna_fasta_generator, orf_peptide_fasta_generator
+from .mod_rosorf_lvl2 import fasta_parser_lvl2, orf_finder_lvl2, orf_data_collector_lvl2, orf_dna_fasta_generator_lvl2, orf_mrna_fasta_generator_lvl2, orf_peptide_fasta_generator_lvl2
